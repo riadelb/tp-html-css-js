@@ -1,0 +1,881 @@
+* {
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --bgc-clair: #FFFFFF;
+    --bgc-sombre: #444444;
+    --orange: #ED786A;
+    --orangehover: #FD887A;
+    --rouge: #CC0000;
+    --grisleger: #E5E5E5;
+    --gris-clair: #888888;
+    --gris-moyen: #777777;
+    --gris: #666666;
+    --gris-sombre: #3C3C3C;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+address {
+    padding: 15px;
+}
+
+.adresses {
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.adresses a {
+    text-decoration: underline;
+}
+
+.adresseun,
+.adressdeux {
+    display: flex;
+    flex-direction: column;
+}
+
+.adresses a {
+    color: var(--gris);
+}
+
+a {
+    text-decoration: none;
+}
+
+button i {
+    margin: 10px;
+}
+
+#btn-menu {
+    margin: 5px;
+    box-shadow: 1px 1px 1px gray;
+    border-radius: 5px;
+}
+
+.banner {
+    margin-top: 30px;
+    border-bottom: 8px solid var(--grisleger);
+    border-top: 8px solid var(--grisleger);
+    max-width: 100%;
+    display: block;
+}
+
+.btnform,
+.btnpremier {
+    background-color: #ED786A;
+    border-radius: 10px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    width: 378px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#fermer {
+    background-color: #3a3231;
+    border-radius: 10px;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 45px;
+    width: 378px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+#fermer:hover {
+    background-color: #fff;
+    color: #3C3C3C;
+}
+
+.btntextarea {
+    margin-top: 15px;
+}
+
+.btnpremier {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: inline-block;
+    position: relative;
+}
+
+.copyr {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-color: #c5c1c1;
+    height: 3px;
+
+}
+
+.container .textsurimg {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copy {
+    color: var(--gris);
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.copyright a {
+    text-decoration: underline;
+}
+
+.cont {
+    color: var(--gris);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact i {
+    background-color: var(--gris-clair);
+    border: var(--gris-clair) solid 10px;
+    border-radius: 30px;
+}
+
+.contact {
+    color: var(--gris-clair);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+}
+
+.divun {
+    text-align: center;
+    margin: 50px;
+}
+
+.divun img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px solid #E5E5E5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 384px;
+    height: 263px;
+}
+
+
+.dossier {
+    height: 263px;
+    width: 384px;
+}
+
+.exclu {
+    color: #444444;
+    text-decoration: underline;
+}
+
+.faken {
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #ED786A;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+}
+
+.foot {
+    background-color: #E5E5E5;
+    border: 1px solid hsl(0, 0%, 75%);
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+
+}
+
+form input,
+textarea {
+    box-shadow: -2px -2px 0 rgb(212, 211, 211);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gris {
+    color: #888888;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+.geofitness {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+
+}
+
+.geofitness img {
+    display: block;
+    margin-left: 50px;
+    margin-right: 20px;
+    border: 10px solid rgb(226, 226, 226);
+    margin-bottom: 20px;
+    float: left;
+}
+
+.geofitness button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+}
+
+
+h1 {
+    color: #444444;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+hr {
+    margin: 20px;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: var(--gris);
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+#inputTrois p {
+    color: red;
+    font-size: 11px;
+    margin: 0;
+}
+
+#inputDeux p {
+    color: red;
+    font-size: 11px;
+    margin: 0;
+    text-align: center;
+}
+
+#inputUn p {
+    color: red;
+    font-size: 11px;
+    margin: 0;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid var(--gris-clair);
+    margin: 5px;
+    padding: 5px;
+    width: 261px;
+}
+
+i {
+    margin: 15px;
+}
+
+.inp {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#errorNom,
+#errorEmail,
+#errorTextArea {
+    color: red;
+    font-size: 11px;
+}
+
+.main-menu a {
+    background-color: var(--bgc-sombre);
+    color: var(--bgc-clair);
+    display: flex;
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #24242481;
+    margin-left: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.toutnoir {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ampoule0 {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.ampoule {
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    border-radius: 50%;
+    top: -50%;
+}
+
+.ampoule1 {
+    position: absolute;
+    right: 7%;
+    height: 50%;
+    width: 50%;
+    transform: rotate(17deg);
+    background-color: yellow;
+}
+
+.ampoule15 {
+    position: absolute;
+    left: 8%;
+    height: 50%;
+    width: 50%;
+    transform: rotate(-20deg);
+    background-color: yellow;
+}
+
+
+.ampoule2 {
+    background-color: yellow;
+    height: 70%;
+    width: 70%;
+    right: 14%;
+    bottom: 15%;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.ampoule2 img {
+    height: 100px;
+    width: 100px;
+}
+
+
+.none {
+    display: none;
+}
+
+.main-menu i {
+    display: none;
+}
+
+/* .main-menu {
+    display: block;
+    font-size: 11px;
+}
+
+.opened {
+    display: none;
+} */
+.main-menu {
+    display: block;
+    font-size: 11px;
+    opacity: 0;
+    /* Définit l'opacité initiale à 0 */
+    transition: opacity .4s ease;
+    /* Ajoute une transition de 0.3 seconde avec une fonction d'accélération */
+}
+
+.opened {
+    opacity: 1;
+    /* Définit l'opacité à 1 lorsqu'il est ouvert */
+}
+
+ul .listedefaux li a {
+    padding-left: 28px;
+}
+
+ul .listedefauxDeux li a {
+    padding-left: 45px;
+}
+
+.ul-menu a:hover {
+    color: var(--orangehover);
+}
+
+.main-menu .dernierA {
+    padding-bottom: 100%;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    display: block;
+    padding: 0;
+    padding-right: 150px;
+}
+
+ul li ul {
+    padding-right: 0;
+}
+
+.titre {
+    margin: 50px;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+span {
+    background-color: var(--gris);
+    border: var(--gris) solid 10px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+.mess {
+    padding: 5px;
+
+}
+
+.textsurimg p {
+    color: var(--bgc-clair);
+    font-size: 12px;
+}
+
+.pigeon {
+    color: var(--gris-clair);
+}
+
+p {
+    text-align: center;
+    color: var(--gris);
+    margin-top: 20px;
+}
+
+header nav {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+
+}
+
+
+
+
+/* ------ entre 768px et 991px (seulement tablette portrait) ------ */
+
+@media (min-width: 768px) {
+    .adresses {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    .adresses a {
+        color: var(--gris);
+    }
+
+    .articles h3 {
+        font-size: 12px;
+    }
+
+    .articles p {
+        font-size: 12px;
+    }
+
+    .articles button {
+        width: 270px;
+        max-width: 100%;
+    }
+
+    .articles img {
+        margin-left: 0;
+        width: 180px;
+        height: 180px;
+    }
+
+    .banner {
+        margin-right: 0;
+    }
+
+    .btnpremier {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btntextarea {
+        /* margin-left: 30px; */
+        width: 288px;
+        height: 45px;
+    }
+
+    .contact {
+        display: flex;
+
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .copyright div {
+        display: block;
+        margin: 8px;
+    }
+
+    .divun {
+        margin-right: 20px;
+    }
+
+    .desquestions,
+    .cont {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .foot {
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    .form {
+        margin-left: 65px;
+        margin-right: 0;
+    }
+
+    form button {
+        width: 287px;
+        height: 44px;
+    }
+
+    .formu {
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+
+    }
+
+    .formu input {
+        height: 40;
+        width: 190px;
+    }
+
+    .footcontact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .granddiv {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .geofitness img {
+        margin-right: 0;
+        float: inherit;
+    }
+
+    .geofitness button {
+        width: 242px;
+        height: 45px;
+        padding: 0px;
+        margin-top: 43px;
+    }
+
+    h3,
+    p,
+    span {
+        text-align: start;
+    }
+
+    input {
+        width: 190px;
+    }
+
+
+    .premierdiv {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+
+    .premierdiv img {
+        width: 250px;
+        height: 170px;
+
+    }
+
+    .premierdiv h3 {
+        text-align: center;
+    }
+
+    .premierdiv p {
+        text-align: center;
+    }
+
+    .premierdiv .premierarticle {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 200px;
+    }
+
+    .premierdiv .secondarticle {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 200px;
+
+    }
+
+    .premierdiv .troisiemearticle {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 200px;
+
+    }
+
+    .seconddiv h2,
+    h3 {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        padding-right: 0;
+    }
+
+    .seconddiv img {
+        width: 550px;
+        height: 213px;
+        margin-left: 0;
+    }
+
+    textarea {
+        width: 410px;
+        height: 175px;
+    }
+
+    .textsurimg p {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        font-size: 24px;
+
+    }
+
+    span {
+        margin-left: 0;
+        width: 110px;
+        height: 28px;
+        font-size: 10px;
+    }
+
+    .titre {
+        margin-top: 179px;
+        margin-bottom: 108px;
+    }
+}
+
+/* ----------- A partir de 992px (Desktop) ------------ */
+@media (min-width: 992px) {
+    a:hover {
+        color: var(--orangehover);
+    }
+
+    #btn-menu {
+        display: none;
+    }
+
+    .btntextarea {
+        width: 420px;
+    }
+
+    i {
+        display: block;
+    }
+
+    .main-menu a {
+        background-color: var(--bgc-clair);
+        color: var(--bgc-sombre);
+        border: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .divun {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 11px;
+        padding: 0;
+    }
+
+    .seconddiv {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .granddiv {
+        margin-left: 110px;
+        margin-right: 140px;
+    }
+
+    .banner {
+        width: 2000px;
+    }
+
+    .listedefaux li {
+        border: 1px solid rgb(233, 233, 233);
+    }
+
+    ul {
+        background-color: white;
+    }
+
+    .ul-menu li ul {
+        display: none;
+        position: absolute;
+
+    }
+
+    .ul-menu li:hover>ul {
+        display: block;
+    }
+
+    .ul-menu li ul li {
+        position: relative;
+    }
+
+
+    .main-menu ul ul ul:hover {
+        left: 100%;
+        top: 0;
+    }
+
+    .listedefauxDeux {
+        left: 100%;
+        top: 0;
+    }
+
+    .listedefaux a {
+        margin: 10px;
+    }
+
+    #btnmenu {
+        display: none;
+    }
+
+    .main-menu .dernierA {
+        padding-bottom: 0;
+    }
+
+    .main-menu {
+        display: block;
+        height: 200px;
+        opacity: 1;
+    }
+
+    .main-menu i {
+        background-color: var(--gris-clair);
+        border: var(--gris-clair) solid 10px;
+        border-radius: 30px;
+        display: block;
+    }
+
+    .exclu:hover {
+        color: var(--orangehover);
+    }
+
+    button:hover {
+        background-color: var(--orangehover);
+    }
+
+    .textsurimg p {
+        font-size: 24px;
+    }
+
+    .ul-menu {
+        margin-top: -146px;
+    }
+
+
+
+}
